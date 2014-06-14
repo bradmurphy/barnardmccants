@@ -1,0 +1,133 @@
+#contact_form_holder { 
+	float: left;
+	width: 100%;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: .8em;
+	margin-top: 2%;
+}
+
+#cf_submit_p { 
+	padding: 1% 0;
+	text-align:right;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	color: #DA3610;
+}
+
+#cf_submit_p input { 
+	padding: 1% 1%; 
+	color: #DA3610;
+	font-family: 'Droid Sans', sans-serif;
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-transition: .2s all ease-out, background .2s ease-in;
+}
+
+#cf_submit_p input:hover {background: #DA3610; color: #fff;}
+
+.error { 
+	display:none; 
+	padding:5px; 
+	color:#D8000C; 
+	font-size:12px; 
+	background-color:#FFBABA; 
+	border:solid 1px #e06d6d; 
+}
+
+.success { 
+	display:none; 
+	padding:5px; 
+	color:#044406; 
+	font-size:12px; 
+	background-color:#B7FBB9; 
+	border:solid 1px #65d668; 
+}
+
+#contact_logo {vertical-align:middle;}
+
+.error img {vertical-align:top;}
+
+.contact_name, .contact_email, .contact_message { 
+	width: 100%; 
+	background: #fff; 
+	border:solid 1px #DA3610;
+	padding: 1% 1%;  
+	margin: 2% 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#topic { 
+	width:100%; 
+	font-size:12px; 
+	background: #fff; 
+	border:solid 1px #DA3610; 
+	padding: 1% 1%;  
+	margin: 2% 0; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.contact_message {height: 200px;}
+
+select, input, textarea { 
+	outline:none;
+	background:none; 
+	border:solid 1px #DA3610;
+	font-family: 'Droid Serif', serif;
+	-webkit-transition: .2s all ease-out, background .2s ease-in;
+}
+
+select:focus, input:focus, textarea:focus { 
+	border:solid 1px #DA3610;
+	-webkit-box-shadow:#DA3610 0px 0px 5px; 
+}
+
+/*=== MEDIA QUERIES ===*/
+
+@media only screen and (min-width: 768px) {
+
+	.details-breakout {
+		float: left;
+		width: 50%;
+		padding-right: 1%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+	.message-breakout {
+		float: left;
+		width: 50%;
+		padding-left: 1%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+
+}
+
+@media only screen and (min-width: 1280px) {
+
+	#contact_form_holder { 
+		position: relative;
+		width: 70%;
+		left: 30%;
+		font-size: 1em;
+	}
+
+	.contact_name, .contact_email, .contact_message, #topic { 
+		margin: 1% 0;
+	}
+
+	.details-breakout {
+		width: 100%;
+		padding:0;
+	}
+
+	.message-breakout {
+		width: 100%;
+		padding: 0;
+	}
+
+}
+

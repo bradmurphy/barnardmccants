@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- ABOUT THIS PAGE -->
+	<title>Barnard McCants | Personal Trainer</title>
+	<meta name="author" content="Brad Murphy">
+	<meta charset="utf-8">
+
+	<!-- FAV ICON -->
+	<link rel="shortcut icon" href="media/img/fav-icon.png">
+
+	<!-- VIEWPORT -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="media/css/normalize.css">
+	<link rel="stylesheet" href="media/css/main.css">
+	<link rel="stylesheet" href="media/css/form.css">
+
+	<!-- JQUERY & SCRIPTS-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="media/js/modernizr.js" type="text/javascript"></script>
+	<script src="media/js/custom.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+	<script src="media/js/form.js" type="text/javascript"></script>
+	<script>
+		$.noConflict();
+	</script>
+
+</head>
+
+<body>
+
+	<nav class="clearfix">
+
+		<a href="index.html" class="logo-big"><h4>Bernard McCants</h4></a>
+
+		<ul class="clearfix">
+			<li><i class="icon-home"></i><a href="index.html">home</a></li>
+			<li><i class="icon-about"></i><a href="about.html">about</a></li>
+			<li><i class="icon-services"></i><a href="services.html">services</a></li>
+			<li><i class="icon-testimonials"></i><a href="why-me.html">why me?</a></li>
+			<li><i class="icon-contact"></i><a href="contact.html">contact</a></li>
+		</ul>
+
+		<a href="#" id="pull"><h1>Barnard McCants</h1></a>
+
+	</nav>
+
+	<div class="page-wrap">
+
+		<div class="page-header">
+
+			<h3>contact</h3>
+
+		</div>
+
+		<div class="contact-box">
+
+			<div class="info">
+
+				<p>Barnard McCants</p>
+				<p><a href="tel://4040-729-5369" alt="Call Barnard">(404) 729 - 5359</a></p>
+				<p class="last"><a href="mailto:barnardmccants@ymail.com" alt="E-Mail Barnard">barnardmccants@ymail.com</a></p>
+
+				<a href="http://www.workoutanytime.com" target="_blank"><img src="media/img/logo-wa.png" alt="Workout Anytime Logo" class="logo-wa" /></a>
+
+			</div>
+
+			<div class="map">
+
+				<iframe frameborder="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Workout+Anytime,+Jones+Bridge+Road+%23203,+Alpharetta,+GA&amp;aq=0&amp;oq=workout+an&amp;sll=32.678125,-83.178297&amp;sspn=7.015951,13.546143&amp;ie=UTF8&amp;hq=Workout+Anytime,+Jones+Bridge+Road+%23203,+Alpharetta,+GA&amp;t=m&amp;ll=34.025882,-84.250124&amp;spn=0.006295,0.006295&amp;output=embed"></iframe>
+
+			</div>
+
+			<div id="contact_form_holder">
+			    <form action="contact.php" method="post" id="contact_form">
+			    	<div class="details-breakout">
+				        <div id="name_error" class="error"><img src="media/img/error.png" /> I don't talk to strangers.</div>
+				        <div>Name:<br /><input class="contact_name" type="text" name="name" id="name" /></div>
+				        <div id="email_error" class="error"><img src="media/img/error.png" /> You don't want me to answer?</div>
+				        <div>E-Mail:<br /><input class="contact_email" type="text" name="email" id="email" /></div>
+				        <div id="topic_error" class="error"><img src="media/img/error.png" /> What category should this be filled in?</div>
+				        <div>
+				        	Subject:<br />
+				            <select name="topic" id="topic">
+				                <option value="">Please select a topic...</option>
+				                <option value="Book A Workout">Book A Workout</option>
+				                <option value="Just a quick question!">Just a quick question!</option>
+				                <option value="Schedule Change">I need to reschedule my session!</option>
+				            </select>
+				        </div>
+				    </div>
+			        <div class="message-breakout">
+				        <div id="message_error" class="error"><img src="media/img/error.png" /> Forgot why you came here?</div>
+				        <div>Message:<br /><textarea class="contact_message" name="message" id="message"></textarea></div>
+				        <div id="mail_success" class="success"><img src="media/img/success.png" /> Thank you. The mailman is on his way.</div>
+				        <div id="mail_fail" class="error"><img src="media/img/error.png" /> Sorry, we don't know what happened. Please try again later.</div>
+				        
+				        <div id="cf_submit_p">
+				            <input class="submit" type="submit" id="send_message" value="Send Message">
+				        </div>
+			    	</div>
+			    </form>
+			</div>
+
+		</div>
+		
+	</div>
+
+	<footer>
+
+		<h2>Nutritional Tip <i class="icon-right-arrow"></i></h2>
+
+		<p>If you must eat processed foods, make sure they are low in salt and sugar.</p>
+
+	</footer>
+
+	<span class="me">Development &amp; Design by <a href="mailto:bm.dev84@gmail.com">Brad Murphy</a></span>
+
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-46558206-1', 'barnardmccants.com');
+	  ga('send', 'pageview');
+
+	</script>
+
+</body>
+
+</html>
